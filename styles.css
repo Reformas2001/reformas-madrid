@@ -1,80 +1,211 @@
-/* Reset básico */
-* {
+/* ====== GENERAL ====== */
+body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* Colores principales */
-:root {
-  --color-primario: #ff6600;   /* Naranja */
-  --color-secundario: #0a192f; /* Azul oscuro */
-  --color-texto: #333;
-  --color-blanco: #fff;
+h1, h2, h3 {
+  margin: 0 0 15px;
 }
 
-/* Header */
-header {
-  background: url("https://source.unsplash.com/1600x900/?modern-house,architecture") center/cover no-repeat;
-  color: var(--color-blanco);
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-/* Menú */
-nav {
-  background: rgba(10, 25, 47, 0.9);
+/* ====== NAVBAR ====== */
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 15px 40px;
+  background: #0a1a2f;
 }
 
-nav h1 {
-  color: var(--color-primario);
-  font-size: 1.5rem;
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
 }
 
-nav ul {
+.logo span {
+  color: #ff6600;
+}
+
+.navbar ul {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 20px;
 }
 
-nav ul li a {
-  color: var(--color-blanco);
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
+.navbar ul li a {
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
-nav ul li a:hover {
-  color: var(--color-primario);
+.navbar ul li a:hover {
+  color: #ff6600;
 }
 
-/* Hero */
+/* ====== HERO ====== */
 .hero {
+  height: 90vh;
+  background: url("https://images.pexels.com/photos/6474470/pexels-photo-6474470.jpeg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
   text-align: center;
-  margin: auto;
-  color: var(--color-blanco);
-  padding: 2rem;
-  background: rgba(0,0,0,0.5);
-  border-radius: 10px;
+  position: relative;
 }
 
-.hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
 }
 
 .hero p {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.2em;
+  margin-bottom: 30px;
 }
 
-.hero a {
-  background: var(--color-primario);
-  color: var(--
+.btn {
+  background: #ff6600;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #e65c00;
+}
+
+/* ====== SERVICIOS ====== */
+.services {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.service {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+}
+
+.service img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.service h3 {
+  font-size: 1.2em;
+  margin: 15px 0 10px;
+  color: #ff6600;
+}
+
+.service p {
+  padding: 0 15px 20px;
+  color: #555;
+  font-size: 0.95em;
+}
+
+/* ====== PROYECTOS ====== */
+.projects {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* ====== CONTACTO ====== */
+.contact {
+  padding: 60px 20px;
+  background: #0a1a2f;
+  color: #fff;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+.contact a {
+  color: #ff6600;
+  font-weight: bold;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  background: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+    }
