@@ -5,182 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reformas Madrid</title>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-    }
-
-    header {
-      background: #0d1b2a;
-      color: white;
-      padding: 15px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 22px;
-    }
-
-    header h1 span {
-      color: #ff6600;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      color: #ff6600;
-    }
-
-    .hero {
-      background: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c") no-repeat center center/cover;
-      color: white;
-      text-align: center;
-      padding: 120px 20px;
-    }
-
-    .hero h2 {
-      font-size: 34px;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #ff6600;
-      color: white;
-      padding: 12px 25px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .btn:hover {
-      background: #e65c00;
-    }
-
-    section {
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    section h2 {
-      color: #0d1b2a;
-      margin-bottom: 20px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: #f4f4f4;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .card img {
-      width: 100%;
-      border-radius: 10px;
-    }
-
-    .contacto a {
-      color: #ff6600;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    footer {
-      background: #0d1b2a;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 30px;
-    }
-  </style>
 </head>
 <body>
+  <!-- ===== NAVBAR ===== -->
+  <nav>
+    <div class="logo">Reformas Madrid</div>
+    <ul>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
 
-  <header>
-    <h1>Reformas <span>Madrid</span></h1>
-    <nav>
-      <a href="#servicios">Servicios</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
+  <!-- ===== HERO ===== -->
+  <header class="hero">
+    <h1>Reformas integrales en la Comunidad de Madrid</h1>
+    <p>Transformamos tu hogar o negocio con profesionales de confianza en todos los oficios de la construcción.</p>
+    <a href="#contacto">Pide tu presupuesto</a>
   </header>
 
-  <section class="hero">
-    <h2>Reformas integrales en Madrid</h2>
-    <p>Transformamos tu hogar o negocio con profesionales de confianza</p>
-    <a href="#contacto" class="btn">Pide tu presupuesto</a>
-  </section>
-
+  <!-- ===== SERVICIOS ===== -->
   <section id="servicios">
-    <h2>Servicios</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1588854337221-4cfafec9b331" alt="Reformas de cocina">
-        <h3>Cocinas</h3>
-        <p>Diseño y reforma de cocinas modernas y funcionales.</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1600566753190-17f88b779a3d" alt="Reformas de baño">
-        <h3>Baños</h3>
-        <p>Renovación completa de baños con materiales de calidad.</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" alt="Reformas de salón">
-        <h3>Salones</h3>
-        <p>Espacios modernos, amplios y llenos de estilo.</p>
-      </div>
+    <h2>Nuestros Servicios</h2>
+    <div class="services">
+      <div>Albañilería</div>
+      <div>Electricidad</div>
+      <div>Fontanería</div>
+      <div>Pintura</div>
+      <div>Carpintería</div>
+      <div>Suelos y Alicatados</div>
+      <div>Cocinas</div>
+      <div>Baños</div>
+      <div>Climatización</div>
+      <div>Pladur</div>
     </div>
   </section>
 
+  <!-- ===== PROYECTOS ===== -->
   <section id="proyectos">
     <h2>Proyectos Realizados</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1600585154200-3b6a9b8b9c6f" alt="Proyecto 1">
-        <h3>Reforma Integral</h3>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1600585153880-4e92dff7ad4f" alt="Proyecto 2">
-        <h3>Renovación de Cocina</h3>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1597002235041-b49b6e9e9f1a" alt="Proyecto 3">
-        <h3>Reforma de Oficina</h3>
-      </div>
-    </div>
+    <p style="text-align:center;">Muy pronto añadiremos fotos de nuestros trabajos.</p>
   </section>
 
-  <section id="contacto" class="contacto">
+  <!-- ===== CONTACTO ===== -->
+  <footer id="contacto">
     <h2>Contacto</h2>
-    <p>¿Necesitas un presupuesto o más información?</p>
-    <p>Email: <a href="mailto:reformas.madrid2001@yahoo.es">reformas.madrid2001@yahoo.es</a></p>
-    <p>WhatsApp: <a href="https://wa.me/34678867108" target="_blank">+34 678 867 108</a></p>
-  </section>
-
-  <footer>
-    <p>© 2024 Reformas Madrid - Todos los derechos reservados</p>
+    <p>📞 Teléfono: <a href="tel:678867108">678 867 108</a></p>
+    <p>💬 WhatsApp: <a href="https://wa.me/34678867108" target="_blank">Enviar mensaje</a></p>
+    <p>📧 Email: <a href="mailto:reformas.madrid2001@yahoo.es">reformas.madrid2001@yahoo.es</a></p>
+    <p>© 2025 Reformas Madrid - Todos los derechos reservados</p>
   </footer>
-
 </body>
 </html>
