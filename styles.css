@@ -1,172 +1,80 @@
-/* Fuente limpia y reset */
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Arial', sans-serif;
 }
 
-body {
-  color: #333;
-  line-height: 1.6;
-  background: #f9f9f9;
+/* Colores principales */
+:root {
+  --color-primario: #ff6600;   /* Naranja */
+  --color-secundario: #0a192f; /* Azul oscuro */
+  --color-texto: #333;
+  --color-blanco: #fff;
 }
 
-/* Navbar */
+/* Header */
 header {
-  background: url("https://source.unsplash.com/1600x900/?construction,blueprint") center/cover no-repeat;
-  color: white;
+  background: url("https://source.unsplash.com/1600x900/?modern-house,architecture") center/cover no-repeat;
+  color: var(--color-blanco);
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.navbar {
+/* Menú */
+nav {
+  background: rgba(10, 25, 47, 0.9);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 50px;
-  background: rgba(0, 0, 0, 0.7);
+  padding: 1rem 2rem;
 }
 
-.logo {
-  font-size: 22px;
-  font-weight: bold;
+nav h1 {
+  color: var(--color-primario);
+  font-size: 1.5rem;
 }
 
-.logo span {
-  color: #ff6600;
-}
-
-.nav-links {
+nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 1.5rem;
 }
 
-.nav-links a {
-  color: white;
+nav ul li a {
+  color: var(--color-blanco);
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-.nav-links a:hover {
-  color: #ff6600;
+nav ul li a:hover {
+  color: var(--color-primario);
 }
 
 /* Hero */
 .hero {
   text-align: center;
-  padding: 100px 20px;
-  background: rgba(0, 0, 0, 0.6);
+  margin: auto;
+  color: var(--color-blanco);
+  padding: 2rem;
+  background: rgba(0,0,0,0.5);
+  border-radius: 10px;
 }
 
 .hero h2 {
-  font-size: 36px;
-  margin-bottom: 15px;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .hero p {
-  font-size: 18px;
-  margin-bottom: 25px;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
-.btn {
-  display: inline-block;
-  padding: 12px 25px;
-  background: #ff6600;
-  color: white;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-
-.btn:hover {
-  background: #e65500;
-}
-
-/* Secciones */
-.section {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.section h2 {
-  font-size: 28px;
-  margin-bottom: 30px;
-  color: #222;
-}
-
-/* Servicios */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background: white;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  font-weight: bold;
-  transition: transform 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  background: #ff6600;
-  color: white;
-}
-
-/* Galería */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
-}
-
-.gallery img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-}
-
-/* Contacto */
-.formulario {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 500px;
-  margin: 20px auto;
-}
-
-.formulario input,
-.formulario textarea {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 16px;
-}
-
-.formulario button {
-  padding: 12px;
-  background: #ff6600;
-  border: none;
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.formulario button:hover {
+.hero a {
+  background: var(--color-primario);
+  color: var(--
