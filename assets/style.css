@@ -1,0 +1,43 @@
+/* ====== Estilos base ====== */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #ffffff;
+}
+
+/* ====== Header / navegación ====== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 22px;
+  background: #004aad; /* azul corporativo */
+  color: #fff;
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+}
+.header .logo img { height: 40px; }
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 14px;
+  font-weight: 600;
+}
+.nav a:hover { text-decoration: underline; }
+
+/* ====== Hero ====== */
+.hero {
+  text-align: center;
+  padding: 70px 20px;
+  background: #f4f6fb;
+}
+.hero h1 {
+  margin: 0 0 12px;
+  font-size: 2.2
