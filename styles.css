@@ -1,126 +1,172 @@
-/* ===== Reset ===== */
+/* Fuente limpia y reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* ===== Navbar ===== */
-nav {
-  background: #0f172a;
+body {
+  color: #333;
+  line-height: 1.6;
+  background: #f9f9f9;
+}
+
+/* Navbar */
+header {
+  background: url("https://source.unsplash.com/1600x900/?construction,blueprint") center/cover no-repeat;
   color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 15px 50px;
+  background: rgba(0, 0, 0, 0.7);
 }
 
-nav .logo {
-  font-size: 1.5rem;
+.logo {
+  font-size: 22px;
   font-weight: bold;
-  color: #f97316;
 }
 
-nav ul {
-  display: flex;
+.logo span {
+  color: #ff6600;
+}
+
+.nav-links {
   list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-nav ul li {
-  margin: 0 1rem;
-}
-
-nav ul li a {
+.nav-links a {
   color: white;
   text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
-nav ul li a:hover {
-  color: #f97316;
+.nav-links a:hover {
+  color: #ff6600;
 }
 
-/* ===== Hero Section ===== */
-header.hero {
-  height: 90vh;
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #ff6600;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #e65500;
+}
+
+/* Secciones */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+/* Servicios */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #ff6600;
+  color: white;
+}
+
+/* Galería */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Contacto */
+.formulario {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  gap: 15px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.formulario button {
+  padding: 12px;
+  background: #ff6600;
+  border: none;
   color: white;
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url("https://images.unsplash.com/photo-1503387762-592deb58ef4e") no-repeat center center/cover;
-  padding: 0 1rem;
-}
-
-header.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-header.hero p {
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin-bottom: 1.5rem;
-}
-
-header.hero a {
-  padding: 0.8rem 1.5rem;
-  background: #f97316;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-header.hero a:hover {
-  background: #ea580c;
-}
-
-/* ===== Secciones ===== */
-section {
-  padding: 3rem 1rem;
-  max-width: 1100px;
-  margin: auto;
-}
-
-h2 {
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 2rem;
-  color: #0f172a;
-}
-
-/* ===== Servicios ===== */
-.services {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-}
-
-.services div {
-  background: #f1f5f9;
-  padding: 1.5rem;
-  border-radius: 10px;
-  text-align: center;
-  transition: transform 0.3s;
+  font-size: 16px;
   font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
-.services div:hover {
-  transform: translateY(-5px);
-  background: #e2e8f0;
-}
-
-/* ===== Contacto ===== */
-footer {
-  background: #0f172a;
-  color: white;
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-footer a {
-  color: #f97316;
-  text-decoration: none;
-}
+.formulario button:hover {
