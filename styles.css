@@ -1,13 +1,11 @@
-/* Fondo con imagen de la casa */
+/* Reset básico */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: #fff;
-  background: url('casa-moderna.png') no-repeat center center fixed;
-  background-size: cover;
 }
 
-/* Encabezado */
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -43,36 +41,61 @@ nav a {
   font-weight: bold;
 }
 
-/* Secciones */
-main section {
-  padding: 50px;
-  background: rgba(0, 0, 0, 0.5);
-  margin: 20px;
-  border-radius: 10px;
+/* Hero con fondo */
+.hero {
+  height: 100vh;
+  background: url('casa-moderna.png') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-h1, h2 {
+.hero-text {
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8); /* sombra para leer bien */
+}
+
+.hero h2 {
+  font-size: 2.5em;
   margin-bottom: 15px;
 }
 
-/* Botón */
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Botón principal */
 .btn {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 12px 24px;
   background: #25D366;
   color: white;
-  border-radius: 5px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.1em;
 }
 
 .btn:hover {
   background: #1ebe57;
 }
 
+/* Secciones */
+main section {
+  padding: 60px 20px;
+  background: rgba(0, 0, 0, 0.6);
+  margin: 20px;
+  border-radius: 10px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
 /* Footer */
 footer {
   text-align: center;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
 }
