@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios | Reformas Madrid</title>
+  <meta name="description" content="Servicios profesionales de reformas en Madrid: albañilería, fontanería, electricidad, carpintería, pintura, solados, alicatados y mucho más.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">🏠 Reformas Madrid</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html" class="active">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Nuestros Servicios</h1>
+    <p>Ofrecemos todo tipo de reformas en Madrid, con profesionales especializados en cada oficio.</p>
+  </section>
+
+  <!-- Servicios -->
+  <section class="services">
+    <div class="service-card">
+      <h2>🔨 Albañilería</h2>
+      <p>Muros, tabiques, estructuras y todo tipo de trabajos de obra.</p>
+    </div>
+    <div class="service-card">
+      <h2>🚰 Fontanería</h2>
+      <p>Instalación y reparación de tuberías, baños, cocinas y sistemas de agua.</p>
+    </div>
+    <div class="service-card">
+      <h2>💡 Electricidad</h2>
+      <p>Instalaciones eléctricas seguras y eficientes para viviendas y locales.</p>
+    </div>
+    <div class="service-card">
+      <h2>🪚 Carpintería</h2>
+      <p>Puertas, armarios, muebles a medida y soluciones de madera personalizadas.</p>
+    </div>
+    <div class="service-card">
+      <h2>🎨 Pintura</h2>
+      <p>Decoración y pintura profesional para interiores y exteriores.</p>
+    </div>
+    <div class="service-card">
+      <h2>🧱 Solados y Alicatados</h2>
+      <p>Colocación de suelos, baldosas y azulejos con acabados de primera calidad.</p>
+    </div>
+    <div class="service-card">
+      <h2>🚪 Reformas Integrales</h2>
+      <p>Proyectos completos de renovación para pisos, casas, locales y oficinas.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Presupuesto en 24 horas sin compromiso</h2>
+    <p>Contacta con nosotros y recibe tu presupuesto rápido y adaptado a tus necesidades.</p>
+    <a href="https://wa.me/34678867108" class="btn-whatsapp">💬 Escríbenos por WhatsApp</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Reformas Madrid | Todos los derechos reservados</p>
+    <p>📧 <a href="mailto:reformas.madrid2001@yahoo.es">reformas.madrid2001@yahoo.es</a> | 📞 +34 678 867 108</p>
+  </footer>
+</body>
+</html>
