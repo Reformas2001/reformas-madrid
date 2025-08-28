@@ -3,55 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="37de47f0f0bb8e21" />
-  <title>Reformas Madrid - Profesionales de las Reformas</title>
+  <title>Reformas Madrid</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- Verificación de Google -->
+  <meta name="google-site-verification" content="37de47f0f0bb8e21" />
 </head>
 <body>
   <!-- HEADER -->
   <header>
-    <div class="logo-text">Reformas Madrid</div>
-    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <div class="logo">
+      <span>🏠 Reformas Madrid</span>
+    </div>
     <nav>
-      <ul id="menu">
+      <ul class="menu" id="menu">
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#servicios">Servicios</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
     </nav>
   </header>
 
   <!-- HERO -->
-  <section class="hero" id="inicio">
+  <section id="inicio" class="hero">
     <div class="hero-text">
-      <h1>Reformas Integrales en Madrid</h1>
-      <p>Presupuesto 24 horas sin compromiso</p>
+      <h1>Reformas integrales y parciales en Madrid</h1>
+      <p>Presupuesto en 24 horas sin compromiso</p>
       <p class="telefono">📞 +34 678 867 108</p>
       <a href="https://wa.me/34678867108" target="_blank" class="whatsapp-btn">
-        💬 WhatsApp
+        💬 Escríbenos por WhatsApp
       </a>
     </div>
   </section>
 
   <!-- SERVICIOS -->
-  <section class="servicios" id="servicios">
+  <section id="servicios" class="servicios">
     <h2>Nuestros Servicios</h2>
     <ul>
       <li>Reformas integrales</li>
-      <li>Electricidad</li>
       <li>Fontanería</li>
+      <li>Electricidad</li>
       <li>Pintura</li>
       <li>Carpintería</li>
       <li>Albañilería</li>
-      <li>Solados y Alicatados</li>
+      <li>Solados y alicatados</li>
     </ul>
   </section>
 
   <!-- CONTACTO -->
-  <section class="contacto" id="contacto">
+  <section id="contacto" class="contacto">
     <h2>Contacto</h2>
     <p>📞 Teléfono: +34 678 867 108</p>
-    <p>📧 Email: reformas.madrid2001@yahoo.es</p>
+    <p>📧 Correo: reformas.madrid2001@yahoo.es</p>
   </section>
 
   <!-- FOOTER -->
@@ -65,6 +68,13 @@
     const menu = document.getElementById('menu');
     toggle.addEventListener('click', () => {
       menu.classList.toggle('active');
+    });
+
+    // Cerrar menú al hacer clic en un enlace
+    document.querySelectorAll('#menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('active');
+      });
     });
   </script>
 </body>
