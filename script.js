@@ -1,9 +1,9 @@
-// script.js
+// ==== MENU HAMBURGUESA ====
 document.addEventListener("DOMContentLoaded", () => {
-  const menuToggle = document.getElementById("menu-toggle");
-  const navMenu = document.querySelector(".nav ul");
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navMenu = document.querySelector("header nav ul");
 
   menuToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("show");
+    navMenu.classList.toggle("active");
   });
 });
