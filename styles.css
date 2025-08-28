@@ -1,101 +1,74 @@
-/* Reset básico */
-body {
+body, html {
   margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
-  color: #fff;
 }
 
-/* Header */
-header {
+/* NAVBAR */
+.navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 15px;
-  background: rgba(0, 0, 0, 0.6);
+  justify-content: space-between;
+  background: #333;
+  padding: 10px 20px;
+}
+
+.navbar h1 {
+  color: white;
+  margin-left: 10px;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
+  height: 50px;
 }
 
-.logo img {
-  width: 50px;
-  margin-right: 10px;
-}
-
-nav ul {
+.nav-links {
   list-style: none;
   display: flex;
-  margin: 0;
-  padding: 0;
 }
 
-nav li {
+.nav-links li {
   margin-left: 20px;
 }
 
-nav a {
-  color: white;
+.nav-links a {
   text-decoration: none;
+  color: white;
   font-weight: bold;
 }
 
-/* Hero con fondo */
+/* HERO */
 .hero {
+  background: url("casa.jpg") no-repeat center center/cover;
   height: 100vh;
-  background: url('casa-moderna.png') no-repeat center center/cover;
+  color: white;
+  text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-}
-
-.hero-text {
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.8); /* sombra para leer bien */
+  text-shadow: 2px 2px 5px black;
 }
 
 .hero h2 {
-  font-size: 2.5em;
-  margin-bottom: 15px;
+  font-size: 2rem;
+  margin: 0 20px;
 }
 
 .hero p {
-  font-size: 1.2em;
-  margin-bottom: 20px;
+  font-size: 1.2rem;
 }
 
-/* Botón principal */
-.btn {
-  display: inline-block;
-  padding: 12px 24px;
-  background: #25D366;
-  color: white;
-  border-radius: 8px;
-  text-decoration: none;
+.telefono {
+  font-size: 1.5rem;
+  margin-top: 10px;
   font-weight: bold;
-  font-size: 1.1em;
 }
 
-.btn:hover {
-  background: #1ebe57;
-}
-
-/* Secciones */
-main section {
-  padding: 60px 20px;
-  background: rgba(0, 0, 0, 0.6);
-  margin: 20px;
-  border-radius: 10px;
-}
-
-h2 {
-  margin-bottom: 20px;
-}
-
-/* Footer */
+/* FOOTER */
 footer {
+  background: #333;
+  color: white;
   text-align: center;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.8);
+  padding: 10px;
 }
