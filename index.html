@@ -1,156 +1,173 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Reforma Madrid</title>
-  <meta name="description" content="Reformas integrales y parciales en Madrid: cocinas, baños, pintura, electricidad, fontanería, carpintería y más. Presupuesto sin compromiso y atención directa por WhatsApp." />
-  <meta name="theme-color" content="#0ea5e9" />
-
-  <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%230ea5e9' d='M3 11L12 3l9 8v10h-7v-6H10v6H3z'/></svg>">
-
-  <!-- Open Graph SEO -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Reforma Madrid" />
-  <meta property="og:description" content="Especialistas en reformas integrales y de todos los oficios en Madrid. Presupuesto gratis y contacto directo por WhatsApp." />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1600&auto=format&fit=crop" />
-  <meta property="og:locale" content="es_ES" />
-
-  <!-- TailwindCSS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reforma Madrid | Reformas integrales y servicios profesionales</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          container: { center: true, padding: '1rem' },
-          colors: {
-            brand: {
-              50: '#ecfeff', 100:'#cffafe', 200:'#a5f3fc', 300:'#67e8f9', 400:'#22d3ee',
-              500:'#06b6d4', 600:'#0891b2', 700:'#0e7490', 800:'#155e75', 900:'#164e63'
-            }
-          }
-        }
-      }
-    }
-  </script>
 
-  <!-- Estilos extras -->
+  <!-- Estilos personalizados -->
   <style>
-    .glass { backdrop-filter: blur(8px) saturate(150%); background: rgba(255,255,255,0.7); }
-    .btn { display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border-radius:.75rem;padding:.75rem 1.25rem;font-weight:500;transition:.3s; }
-    .btn-primary { background:#0284c7;color:white; }
-    .btn-primary:hover { background:#0369a1; }
-    .btn-outline { border:1px solid #7dd3fc;color:#075985; }
-    .btn-outline:hover { background:#f0f9ff; }
-    .floating-wa { position:fixed; right:1rem; bottom:1rem; z-index:50; }
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #f0f9ff, #ffffff);
+      color: #1e293b;
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+    a:hover {
+      transform: scale(1.05);
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      border-radius: 0.75rem;
+      padding: 0.75rem 1.25rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    .btn-primary {
+      background: #0284c7;
+      color: white;
+    }
+    .btn-primary:hover {
+      background: #0369a1;
+    }
+    .btn-outline {
+      border: 1px solid #7dd3fc;
+      color: #075985;
+    }
+    .btn-outline:hover {
+      background: #f0f9ff;
+    }
+    .btn-whatsapp {
+      background: #25d366;
+      color: white;
+    }
+    .btn-whatsapp:hover {
+      background: #1ebe5a;
+    }
+    .card {
+      background: white;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    form input,
+    form textarea {
+      border: 1px solid #cbd5e1;
+      border-radius: 0.5rem;
+      padding: 0.75rem;
+      font-size: 1rem;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    form input:focus,
+    form textarea:focus {
+      border-color: #0284c7;
+      box-shadow: 0 0 0 2px #bae6fd;
+      outline: none;
+    }
+    footer {
+      background: #0c4a6e;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    footer a {
+      color: #38bdf8;
+    }
+    footer a:hover {
+      color: white;
+    }
   </style>
 </head>
+<body>
 
-<body class="min-h-screen bg-gradient-to-b from-sky-50 via-white to-white text-slate-800">
-
-  <!-- HEADER -->
-  <header class="sticky top-0 z-40 bg-white/90 shadow backdrop-blur">
-    <div class="container flex items-center justify-between py-4">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-slate-200">
+    <nav class="container mx-auto flex items-center justify-between py-4 px-4">
       <!-- Logo -->
-      <a href="#" class="flex items-center gap-2 text-xl font-bold text-sky-700">
+      <a href="#" class="flex items-center gap-2 font-semibold text-slate-900">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-sky-600" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M3 11L12 3l9 8v10h-7v-6H10v6H3z"/>
+          <path d="M3 11L12 3l9 8v10a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-5H10v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V11z"/>
         </svg>
-        <span>Reforma <span class="text-sky-500">Madrid</span></span>
+        <span class="text-lg">Reforma Madrid</span>
       </a>
       <!-- Menú -->
-      <nav class="hidden md:flex gap-6 text-sm font-medium text-slate-700">
+      <div class="hidden md:flex gap-6 text-sm font-medium">
         <a href="#servicios" class="hover:text-sky-600">Servicios</a>
         <a href="#proyectos" class="hover:text-sky-600">Proyectos</a>
         <a href="#contacto" class="hover:text-sky-600">Contacto</a>
-      </nav>
-      <!-- Botón WhatsApp -->
-      <a href="https://wa.me/34678867108" target="_blank" class="btn btn-primary">WhatsApp</a>
-    </div>
+      </div>
+      <!-- WhatsApp -->
+      <a href="https://wa.me/34678867108" target="_blank" class="btn btn-whatsapp">WhatsApp</a>
+    </nav>
   </header>
 
-  <!-- HERO -->
-  <section class="relative">
-    <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353?q=80&w=1600&auto=format&fit=crop" alt="Reformas en Madrid" class="w-full h-[500px] object-cover">
-    <div class="absolute inset-0 bg-black/40 flex items-center">
-      <div class="container text-white">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">Reformas integrales en Madrid</h1>
-        <p class="max-w-xl mb-6">Baños, cocinas, pintura, electricidad, fontanería y mucho más. Calidad garantizada y atención personalizada.</p>
-        <div class="flex gap-4">
-          <a href="#contacto" class="btn btn-primary">Pide presupuesto</a>
-          <a href="https://wa.me/34678867108" target="_blank" class="btn btn-outline">WhatsApp</a>
-        </div>
-      </div>
+  <!-- Hero -->
+  <section class="relative bg-cover bg-center h-[80vh]" style="background-image: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80');">
+    <div class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center text-white px-4">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Reformas Integrales en Madrid</h1>
+      <p class="text-lg md:text-2xl mb-6">Albañilería, fontanería, electricidad, pintura, carpintería y más</p>
+      <a href="https://wa.me/34678867108" target="_blank" class="btn btn-whatsapp text-lg px-6 py-3">Escríbenos por WhatsApp</a>
     </div>
   </section>
 
-  <!-- SERVICIOS -->
-  <section id="servicios" class="container py-16">
+  <!-- Servicios -->
+  <section id="servicios" class="container mx-auto py-16 px-4">
     <h2 class="text-3xl font-bold text-center mb-12">Nuestros Servicios</h2>
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="p-6 bg-white rounded-xl shadow">
-        <h3 class="text-xl font-semibold mb-2">Reformas de Cocinas</h3>
-        <p>Diseño moderno y funcional, con materiales de primera calidad.</p>
-      </div>
-      <div class="p-6 bg-white rounded-xl shadow">
-        <h3 class="text-xl font-semibold mb-2">Baños</h3>
-        <p>Reformas completas de baños: azulejos, fontanería y sanitarios.</p>
-      </div>
-      <div class="p-6 bg-white rounded-xl shadow">
-        <h3 class="text-xl font-semibold mb-2">Pintura y Acabados</h3>
-        <p>Acabados impecables en interiores y exteriores, con pinturas duraderas.</p>
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div class="card"><h3 class="text-xl font-semibold mb-2">Albañilería</h3><p>Obra nueva, tabiques, solados, alicatados y más.</p></div>
+      <div class="card"><h3 class="text-xl font-semibold mb-2">Fontanería</h3><p>Instalaciones y reparaciones de agua, cocinas y baños.</p></div>
+      <div class="card"><h3 class="text-xl font-semibold mb-2">Electricidad</h3><p>Boletines, instalaciones, iluminación LED, averías.</p></div>
+      <div class="card"><h3 class="text-xl font-semibold mb-2">Pintura</h3><p>Interiores, exteriores, lisos y decorativos.</p></div>
+      <div class="card"><h3 class="text-xl font-semibold mb-2">Carpintería</h3><p>Madera, puertas, armarios, muebles a medida.</p></div>
+      <div class="card"><h3 class="text-xl font-semibold mb-2">Pladur</h3><p>Tabiques, techos falsos y soluciones modernas.</p></div>
+      <div class="card"><h3 class="text-xl font-semibold mb-2">Parquet y Suelos</h3><p>Instalación, lijado y barnizado de suelos de madera.</p></div>
+      <div class="card"><h3 class="text-xl font-semibold mb-2">Cocinas</h3><p>Diseño e instalación de cocinas funcionales y modernas.</p></div>
+      <div class="card"><h3 class="text-xl font-semibold mb-2">Baños</h3><p>Reformas integrales de baños con acabados de calidad.</p></div>
+      <div class="card"><h3 class="text-xl font-semibold mb-2">Climatización</h3><p>Aire acondicionado, calefacción y eficiencia energética.</p></div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="bg-slate-50 py-16 px-4">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">Proyectos Recientes</h2>
+      <div class="grid gap-6 md:grid-cols-3">
+        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80" alt="Proyecto 1" class="rounded-lg shadow">
+        <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=800&q=80" alt="Proyecto 2" class="rounded-lg shadow">
+        <img src="https://images.unsplash.com/photo-1598300056393-4a828397b9e2?auto=format&fit=crop&w=800&q=80" alt="Proyecto 3" class="rounded-lg shadow">
       </div>
     </div>
   </section>
 
-  <!-- PROYECTOS -->
-  <section id="proyectos" class="bg-sky-50 py-16">
-    <div class="container">
-      <h2 class="text-3xl font-bold text-center mb-12">Proyectos Realizados</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=800&auto=format&fit=crop" alt="Proyecto 1" class="rounded-xl shadow">
-        <img src="https://images.unsplash.com/photo-1599423300746-b62533397364?q=80&w=800&auto=format&fit=crop" alt="Proyecto 2" class="rounded-xl shadow">
-        <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?q=80&w=800&auto=format&fit=crop" alt="Proyecto 3" class="rounded-xl shadow">
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACTO -->
-  <section id="contacto" class="container py-16">
+  <!-- Contacto -->
+  <section id="contacto" class="container mx-auto py-16 px-4">
     <h2 class="text-3xl font-bold text-center mb-8">Contacto</h2>
-    <div class="grid md:grid-cols-2 gap-8">
-      <form action="mailto:reformas.madrid2001@yahoo.es" method="post" enctype="text/plain" class="p-6 bg-white rounded-xl shadow flex flex-col gap-4">
-        <input type="text" name="nombre" placeholder="Tu nombre" required class="border p-3 rounded-lg">
-        <input type="email" name="email" placeholder="Tu correo" required class="border p-3 rounded-lg">
-        <textarea name="mensaje" rows="4" placeholder="Tu mensaje" required class="border p-3 rounded-lg"></textarea>
-        <button type="submit" class="btn btn-primary">Enviar</button>
-      </form>
-      <div class="p-6 bg-sky-50 rounded-xl shadow">
-        <p class="mb-2"><strong>Teléfono / WhatsApp:</strong> <a href="https://wa.me/34678867108" target="_blank" class="text-sky-600">+34 678 867 108</a></p>
-        <p class="mb-2"><strong>Email:</strong> <a href="mailto:reformas.madrid2001@yahoo.es" class="text-sky-600">reformas.madrid2001@yahoo.es</a></p>
-        <p><strong>Ubicación:</strong> Madrid y alrededores</p>
-      </div>
-    </div>
+    <form action="mailto:reformas.madrid2001@yahoo.es" method="post" enctype="text/plain" class="max-w-xl mx-auto flex flex-col gap-4">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo" required>
+      <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="bg-sky-900 text-white py-6 mt-16">
-    <div class="container flex flex-col md:flex-row items-center justify-between gap-4">
-      <span>© 2025 Reforma Madrid</span>
-      <div class="flex gap-4">
-        <a href="https://wa.me/34678867108" target="_blank">WhatsApp</a>
-        <a href="mailto:reformas.madrid2001@yahoo.es">Email</a>
-      </div>
-    </div>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Reforma Madrid. Todos los derechos reservados.</p>
+    <p>Tel: <a href="tel:+34678867108">+34 678 867 108</a> | Email: <a href="mailto:reformas.madrid2001@yahoo.es">reformas.madrid2001@yahoo.es</a></p>
   </footer>
-
-  <!-- BOTÓN flotante WhatsApp -->
-  <a href="https://wa.me/34678867108" target="_blank" class="floating-wa bg-green-500 rounded-full p-4 shadow-lg">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" class="w-7 h-7">
-      <path d="M12 0a12 12 0 0 0-10.6 17.6L0 24l6.6-1.7A12 12 0 1 0 12 0zm0 22a10 10 0 0 1-8.7-14.9l.4-.7-1 3.7 2.9.8-.6 1.1a8 8 0 1 0 7-4 8 8 0 0 0-8 8z"/>
-    </svg>
-  </a>
 
 </body>
 </html>
