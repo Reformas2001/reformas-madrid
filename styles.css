@@ -1,4 +1,4 @@
-/* Reset */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -8,26 +8,24 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background: url("https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1350&q=80") no-repeat center center/cover;
   color: #fff;
+  background: url("https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80") no-repeat center center/cover;
 }
 
 /* HEADER */
 header {
+  background: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background: rgba(0,0,0,0.7);
-  position: fixed;
+  padding: 15px 20px;
+  position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
   z-index: 1000;
 }
 
-.logo {
-  font-size: 22px;
+.logo span {
+  font-size: 20px;
   font-weight: bold;
   color: #fff;
 }
@@ -35,29 +33,33 @@ header {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
 }
 
-nav a {
-  text-decoration: none;
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
   color: #fff;
+  text-decoration: none;
   font-weight: bold;
 }
 
 .menu-toggle {
   display: none;
   cursor: pointer;
+  font-size: 24px;
   color: #fff;
 }
 
 /* HERO */
 .hero {
-  height: 100vh;
+  height: 90vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .hero-text h1 {
@@ -66,59 +68,52 @@ nav a {
 }
 
 .hero-text p {
-  font-size: 20px;
   margin-bottom: 10px;
+  font-size: 18px;
 }
 
 .whatsapp-btn {
   display: inline-block;
   margin-top: 15px;
-  padding: 10px 20px;
-  background: #25D366;
-  color: white;
+  padding: 12px 20px;
+  background: #25d366;
+  color: #fff;
   text-decoration: none;
-  font-size: 18px;
-  border-radius: 6px;
+  border-radius: 25px;
   font-weight: bold;
 }
 
-/* SERVICIOS */
-.servicios {
-  padding: 60px 20px;
-  background: rgba(0,0,0,0.8);
-  text-align: center;
+/* SECCIONES */
+.servicios, .contacto {
+  padding: 40px 20px;
+  background: rgba(0, 0, 0, 0.6);
+  margin: 20px;
+  border-radius: 10px;
 }
 
-.servicios h2 {
-  font-size: 28px;
+.servicios h2, .contacto h2 {
+  text-align: center;
   margin-bottom: 20px;
 }
 
 .servicios ul {
   list-style: none;
-  font-size: 20px;
-}
-
-.servicios li {
-  margin-bottom: 10px;
-}
-
-/* CONTACTO */
-.contacto {
-  padding: 60px 20px;
   text-align: center;
-  background: rgba(0,0,0,0.9);
+}
+
+.servicios ul li {
+  margin: 10px 0;
 }
 
 /* FOOTER */
 footer {
+  background: rgba(0, 0, 0, 0.7);
   text-align: center;
   padding: 20px;
-  background: #111;
   font-size: 14px;
 }
 
-/* MENÚ RESPONSIVE */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   nav ul {
     display: none;
@@ -135,6 +130,5 @@ footer {
   }
   .menu-toggle {
     display: block;
-    font-size: 24px;
   }
     }
